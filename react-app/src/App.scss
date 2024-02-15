@@ -1,0 +1,8 @@
+$primary:#150080;
+$accent:#d08642;
+.loading{
+    font-size: 24px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    color:linear-gradient(0deg, $accent 50%, $primary);
+}

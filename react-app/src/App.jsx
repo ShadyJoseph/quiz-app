@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.css'
+import './App.scss'
 import Quiz from './Components/Quiz/Quiz'
 const apiUrl = 'https://644982a3e7eb3378ca4ba471.mockapi.io/questions';
 function App() {

@@ -1,10 +1,10 @@
-
 $primary:#150080;
 $accent:#d08642;
 $bg:#ffffff;
 $bg-accent:#e7e8e9;
 $disabled:#9c9c9c;
 $foreground:#2d264b;
+
 body{
 font-family: monospace;
 background: linear-gradient(0deg,$primary 0.03%,$accent);
@@ -12,6 +12,7 @@ background-attachment: fixed;
 color: $foreground;
 display: flex;
 justify-content: center;
+align-items: center;
 margin: 0 auto;
 padding: 0 30px;
 height: 100vh;

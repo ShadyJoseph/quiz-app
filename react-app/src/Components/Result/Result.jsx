@@ -36,7 +36,12 @@ const handleTryAgain=()=>{
   setHighScores([]);
   TryAgain();
 }
-
+const handleClearHistory = () => {
+  localStorage.clear();
+  setHighScores([]);
+  setShowScores(false);
+  setName('');
+};
   return (
    <>
    <div className='result'>
@@ -78,7 +83,7 @@ const handleTryAgain=()=>{
                    </>
                  ) 
                 })}
-                <button onClick={()=>{localStorage.clear();}}>Clear history</button>
+                <button onClick={handleClearHistory}>Clear history</button>
             </tbody>
           </table>
           </>}

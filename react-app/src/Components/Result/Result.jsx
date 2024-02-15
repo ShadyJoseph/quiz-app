@@ -36,6 +36,7 @@ const handleTryAgain=()=>{
   setHighScores([]);
   TryAgain();
 }
+
   return (
    <>
    <div className='result'>
@@ -68,18 +69,20 @@ const handleTryAgain=()=>{
             </thead>
             <tbody>
                 {highScores.map((highScor,i)=>{
-                 return(
+                 return(<>
                   <tr key={`${highScor.score}${highScor.name}${i}`}>
                     <td>{i+1}</td>
                     <td>{highScor.name}</td>
                     <td>{highScor.score}</td>
                   </tr>
+                   </>
                  ) 
                 })}
+                <button onClick={()=>{localStorage.clear();}}>Clear history</button>
             </tbody>
           </table>
           </>}
-
+          
        </div>
    </>
   )

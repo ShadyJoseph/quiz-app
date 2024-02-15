@@ -8,6 +8,7 @@ $foreground:#2d264b;
 body{
 font-family: monospace;
 background: linear-gradient(0deg,$primary 0.03%,$accent);
+background-attachment: fixed;
 color: $foreground;
 display: flex;
 justify-content: center;

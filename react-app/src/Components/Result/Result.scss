@@ -1,29 +1,66 @@
-
-.result{
+.result {
     text-align: center;
-    h3{
-        font-size: 24px;
-        letter-spacing: 1.4px;
-        text-align: center;
+  
+    h3 {
+      font-size: 24px;
+      letter-spacing: 1.4px;
+      text-align: center;
     }
-    p{
+  
+    p {
+      font-size: 22px;
+      font-weight: 500;
+      color: #d08642;
+  
+      span {
+        color: #150080;
         font-size: 22px;
-        font-weight: 500;
-        color: #d08642;
-        span{
-            color:#150080;
-            font-size: 22px;
-        }
+      }
     }
-    table{
-        width: 50%;
-        text-align: left;
-        margin:50px auto;
-        border-collapse: collapse;
-
-        tr{
-            border: 1px solid;
-            
+  
+    table {
+      width: 100%;
+      text-align: left;
+      margin: 50px auto;
+      border-collapse: collapse;
+  
+      tr {
+        border: 1px solid;
+  
+        th,
+        td {
+          padding: 10px;
         }
+      }
     }
-}
+  
+    button {
+      margin-top: 20px;
+      background-color: #150080;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #007bff;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .result {
+      table {
+        font-size: 16px;
+  
+        th,
+        td {
+          padding: 8px;
+        }
+      }
+    }
+  }
+  

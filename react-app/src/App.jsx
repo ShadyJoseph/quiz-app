@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.scss'
+import Loader from './Components/loader/Loader';
 import Quiz from './Components/Quiz/Quiz'
 const apiUrl = 'https://644982a3e7eb3378ca4ba471.mockapi.io/questions';
 function App() {
@@ -25,7 +26,7 @@ const fetchData=async()=>  {
   }
 }
 if (loading) {
-  return <h2 className='loading'>Loading...</h2>;
+  return <Loader/>;
 }
 
   return (
